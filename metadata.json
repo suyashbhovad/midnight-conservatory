@@ -1,0 +1,6 @@
+{
+  "name": "Birthday Wish",
+  "description": "A premium interactive birthday wish website with a soft neumorphic style and gentle animations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

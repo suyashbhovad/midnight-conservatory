@@ -1,0 +1,137 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .font-serif-heading {
+    font-family: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+  }
+  .font-handwriting {
+    font-family: 'Dancing Script', cursive;
+  }
+  .font-sans-body {
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  }
+
+  /* Soft Neumorphism on Blush Pink (#F8E7E9) */
+  .neu-flat-blush {
+    background: #F8E7E9;
+    box-shadow: 10px 10px 14px rgba(218, 180, 185, 0.5), -10px -10px 14px rgba(250, 242, 242, 0.92);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+  }
+  
+
+/* .neu-flat-blush {
+  background: #F8E7E9;
+  box-shadow:
+    10px 10px 16px rgba(182, 136, 147, 0.9),
+    -8px -8px 14px rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.55);
+} */
+
+
+
+
+  .neu-button-blush {
+    background: #F8E7E9;
+    box-shadow: 8px 8px 14px rgba(218, 180, 185, 0.45), -8px -8px 14px rgba(250, 242, 242, 0.92);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  } 
+
+  /* .neu-button-blush {
+  background: #F8E7E9;
+  box-shadow:
+    5px 5px 10px rgba(190, 145, 155, 0.75),
+    -5px -5px 10px rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}*/
+
+
+  .neu-button-blush:hover {
+    box-shadow: 11px 11px 20px rgba(210, 170, 175, 0.55), -11px -11px 20px rgba(255, 255, 255, 1);
+    transform: translateY(-1px);
+  }
+
+  .neu-button-blush:active,
+  .neu-pressed-blush {
+    box-shadow: inset 4px 4px 9px rgba(210, 170, 175, 0.5), inset -4px -4px 9px rgba(255, 255, 255, 0.85);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
+
+
+
+
+
+  /* Soft Neumorphism on Cream (#FAF5EF) */
+  .neu-flat-cream {
+    background: #FAF5EF;
+    box-shadow: 10px 10px 14px rgba(220, 204, 190, 0.55), -10px -10px 14px rgba(250, 242, 242, 0.92);
+    border: 1px solid rgba(255, 255, 255, 0.75);
+  }
+
+ 
+   
+ 
+
+
+  .neu-button-cream {
+    background: #FAF5EF;
+    box-shadow: 8px 8px 18px rgba(215, 198, 182, 0.5), -8px -8px 18px rgba(250, 242, 242, 0.92);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .neu-button-cream:hover {
+    box-shadow: 11px 11px 22px rgba(208, 190, 172, 0.6), -11px -11px 22px rgba(255, 255, 255, 1);
+    transform: translateY(-1px);
+  }
+
+  .neu-button-cream:active,
+  .neu-pressed-cream {
+    box-shadow: inset 4px 4px 8px rgba(210, 192, 174, 0.55), inset -4px -4px 8px rgba(255, 255, 255, 0.85);
+  }
+
+  /* Pure White Gallery Neumorphism */
+  .neu-flat-white {
+    background: #FFFFFF;
+    box-shadow: 12px 12px 25px rgba(215, 195, 190, 0.35), -10px -10px 20px rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.9);
+  }
+
+  /* Soft Glow & Inset Text / Dividers */
+  .neu-inset-panel {
+    background: rgba(252, 239, 239, 0.6);
+    box-shadow: inset 3px 3px 6px rgba(210, 175, 180, 0.35), inset -3px -3px 6px rgba(255, 255, 255, 0.8);
+  }
+}
+
+/* Custom Gentle Animations */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(1.5deg);
+  }
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    opacity: 0.6;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.85;
+    transform: scale(1.03);
+  }
+}
+
+.animate-float-slow {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 4s ease-in-out infinite;
+}
+
