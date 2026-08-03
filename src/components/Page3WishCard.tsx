@@ -40,9 +40,9 @@ export const Page3WishCard: React.FC<Page3WishCardProps> = ({
         </div>
 
         {/* Card Title */}
-        <h2 className="font-serif-heading text-3xl sm:text-4xl font-bold text-[#5C4247] mb-6">
+        {/* <h2 className="font-serif-heading text-3xl sm:text-4xl font-bold text-[#5C4247] mb-6">
           For You, {recipientName}
-        </h2>
+        </h2> */}
 
         {/* Neumorphic Inset Handwritten Wishing Letter */}
         {/* <div className="neu-inset-panel rounded-3xl p-6 sm:p-8 mb-8 text-left relative overflow-hidden">
