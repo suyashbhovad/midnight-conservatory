@@ -75,7 +75,7 @@ export const Page2LetterReveal: React.FC<Page2LetterRevealProps> = ({
             className="relative flex-1 rounded-[1.5rem] overflow-hidden group cursor-pointer shadow-md bg-white border border-white/80 min-h-[210px] sm:min-h-[400px]"
           >
             <img
-              src="/src/assets/images/envelope_bouquet_1784805631870.jpg"
+              src="/images/envelope_bouquet_1784805631870.jpg"
               alt="Khaki beige envelope and soft tulip bouquet on white surface"
               referrerPolicy="no-referrer"
               className="w-full h-full object-cover object-center transition-transform duration-1000 group-hover:scale-105"

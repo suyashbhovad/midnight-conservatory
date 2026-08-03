@@ -112,7 +112,7 @@ export const Page4FinalSurprise: React.FC<Page4FinalSurpriseProps> = ({
             >
               {/* The Sketch Image */}
               <motion.img
-                src="/src/assets/images/Siya.jpg"
+                src="/images/Siya.jpg"
                 alt="Personal sketch artwork"
                 referrerPolicy="no-referrer"
                 className="w-full h-full object-cover transition-all duration-1000"
